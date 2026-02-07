@@ -1015,7 +1015,13 @@ function App() {
             onClick={(event) => event.stopPropagation()}
           >
             <div className="download-head">
-              <span>Download AmarcordDJ</span>
+              <div className="download-brand">
+                <img src={logoUrl} alt="AmarcordDJ logo" />
+                <div>
+                  <span>Download AmarcordDJ</span>
+                  <span className="download-tag">Studio Edition</span>
+                </div>
+              </div>
               <button
                 className="ghost"
                 onClick={() => setShowDownloads(false)}
@@ -2025,6 +2031,9 @@ function App() {
         <img src={logoUrl} alt="AmarcordDJ" />
         <span>© 2026 AmarcordDJ.</span>
         <span>By Jose Álvarez Dev.</span>
+        <button className="download-footer" onClick={() => setShowDownloads(true)}>
+          Download
+        </button>
         <button className="license-btn" onClick={() => setLicenseOpen(true)}>
           MIT License.
         </button>

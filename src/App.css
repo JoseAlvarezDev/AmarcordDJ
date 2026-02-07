@@ -276,9 +276,22 @@ button.active {
   width: min(720px, 92vw);
   padding: 22px;
   border-radius: 24px;
-  background: linear-gradient(160deg, rgba(20, 24, 31, 0.95), rgba(9, 11, 17, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(160deg, rgba(22, 28, 38, 0.9), rgba(9, 12, 20, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+}
+
+.download-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(54, 245, 213, 0.14), transparent 45%),
+    radial-gradient(circle at top right, rgba(107, 123, 255, 0.2), transparent 45%);
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .download-head {
@@ -288,18 +301,49 @@ button.active {
   font-weight: 600;
   font-size: 1.05rem;
   margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.download-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.download-brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.download-brand span {
+  display: block;
+}
+
+.download-tag {
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
 }
 
 .download-sub {
   color: var(--ink-soft);
   margin-bottom: 18px;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
 }
 
 .download-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 14px;
+  position: relative;
+  z-index: 1;
 }
 
 .download-button {
@@ -347,6 +391,22 @@ button.active {
 .download-button.disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.download-footer {
+  background: linear-gradient(135deg, rgba(54, 245, 213, 0.2), rgba(107, 123, 255, 0.25));
+  border: 1px solid rgba(54, 245, 213, 0.35);
+  color: var(--ink);
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-footer:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes greenPulse {

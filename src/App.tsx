@@ -985,18 +985,6 @@ function App() {
           <button className="primary" onClick={() => setLiveMode((prev) => !prev)}>
             {liveMode ? "Stop Live" : "Go Live"}
           </button>
-          <button
-            className="primary"
-            onClick={() => {
-              window.open(
-                "https://josealvarezdev.github.io/AmarcordDJ/",
-                "_blank",
-                "noopener,noreferrer"
-              );
-            }}
-          >
-            Live Demo
-          </button>
           <a
             className="kofi-link"
             href="https://ko-fi.com/josealvarezdev"

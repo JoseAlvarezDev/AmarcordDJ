@@ -111,6 +111,7 @@ const DEFAULT_FX_PRESETS: FxPreset[] = [
 const SPECTRUM_BARS = 24;
 
 function App() {
+  const logoUrl = `${import.meta.env.BASE_URL}logo.jpeg`;
   const deckARef = useRef<HTMLDivElement | null>(null);
   const deckBRef = useRef<HTMLDivElement | null>(null);
   const waveARef = useRef<WaveSurfer | null>(null);
@@ -942,7 +943,7 @@ function App() {
       >
         <div className="brand">
           <div className="logo-frame">
-            <img src="/logo.jpeg" alt="AmarcordDJ logo" />
+            <img src={logoUrl} alt="AmarcordDJ logo" />
           </div>
           <div className="brand-text">
             <span className="brand-title">AmarcordDJ</span>
@@ -1963,7 +1964,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <img src="/logo.jpeg" alt="AmarcordDJ" />
+        <img src={logoUrl} alt="AmarcordDJ" />
         <span>© 2026 AmarcordDJ.</span>
         <span>By Jose Álvarez Dev.</span>
         <button className="license-btn" onClick={() => setLicenseOpen(true)}>
@@ -2197,7 +2198,7 @@ function App() {
               </button>
             </div>
             <div className="license-body">
-              <img src="/logo.jpeg" alt="AmarcordDJ" />
+              <img src={logoUrl} alt="AmarcordDJ" />
               <p>AmarcordDJ is released under the MIT License.</p>
               <div className="license-text">
                 <p>MIT License</p>

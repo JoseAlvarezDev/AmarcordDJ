@@ -8,11 +8,23 @@
   <img src="public/logo.jpeg" alt="AmarcordDJ Logo" width="240" />
 </p>
 
-[![Download for macOS](https://img.shields.io/badge/Download-macOS-1f2937?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/JoseAlvarezDev/AmarcordDJ/releases)
-[![Download for Windows](https://img.shields.io/badge/Download-Windows-1f2937?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JoseAlvarezDev/AmarcordDJ/releases)
-[![Download for Linux](https://img.shields.io/badge/Download-Linux-1f2937?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/JoseAlvarezDev/AmarcordDJ/releases)
+<p align="center">
+  <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases/download/v0.1.0/AmarcordDJ_0.1.0_aarch64.dmg.zip">
+    <img src="https://img.shields.io/badge/Download-macOS-0b0b10?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS" />
+  </a>
+  <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases">
+    <img src="https://img.shields.io/badge/Download-Windows-0b0b10?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" />
+  </a>
+  <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases">
+    <img src="https://img.shields.io/badge/Download-Linux-0b0b10?style=for-the-badge&logo=linux&logoColor=white" alt="Download for Linux" />
+  </a>
+</p>
 
-[![Support this project](https://img.shields.io/badge/Support-Ko--fi-16a34a?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/josealvarezdev)
+<p align="center">
+  <a href="https://ko-fi.com/josealvarezdev">
+    <img src="https://img.shields.io/badge/Support-Ko--fi-16a34a?style=for-the-badge&logo=kofi&logoColor=white" alt="Support on Ko-fi" />
+  </a>
+</p>
 
 ---
 

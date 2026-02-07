@@ -112,6 +112,7 @@ const SPECTRUM_BARS = 24;
 
 function App() {
   const logoUrl = `${import.meta.env.BASE_URL}logo.jpeg`;
+  const [showDownloads, setShowDownloads] = useState(false);
   const deckARef = useRef<HTMLDivElement | null>(null);
   const deckBRef = useRef<HTMLDivElement | null>(null);
   const waveARef = useRef<WaveSurfer | null>(null);
@@ -969,6 +970,9 @@ function App() {
           </div>
         </div>
         <div className="top-actions">
+          <button className="primary" onClick={() => setShowDownloads(true)}>
+            Download
+          </button>
           <button
             className="primary"
             onClick={() => {
@@ -1003,6 +1007,60 @@ function App() {
           </a>
         </div>
       </header>
+
+      {showDownloads && (
+        <div className="download-modal" onClick={() => setShowDownloads(false)}>
+          <div
+            className="download-card"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="download-head">
+              <span>Download AmarcordDJ</span>
+              <button
+                className="ghost"
+                onClick={() => setShowDownloads(false)}
+              >
+                Close
+              </button>
+            </div>
+            <p className="download-sub">
+              Latest release: v0.1.0 • macOS Apple Silicon
+            </p>
+            <div className="download-grid">
+              <a
+                className="download-button mac"
+                href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases/download/v0.1.0/AmarcordDJ_0.1.0_aarch64.dmg.zip"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="icon">MAC</span>
+                <span className="label">macOS (Apple Silicon)</span>
+                <span className="meta">DMG (.zip)</span>
+              </a>
+              <a
+                className="download-button alt"
+                href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases/download/v0.1.0/AmarcordDJ_0.1.0_aarch64.app.zip"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="icon">MAC</span>
+                <span className="label">macOS App Bundle</span>
+                <span className="meta">.app (.zip)</span>
+              </a>
+              <div className="download-button disabled">
+                <span className="icon">WIN</span>
+                <span className="label">Windows</span>
+                <span className="meta">Coming soon</span>
+              </div>
+              <div className="download-button disabled">
+                <span className="icon">LNX</span>
+                <span className="label">Linux</span>
+                <span className="meta">Coming soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Routes>
         <Route

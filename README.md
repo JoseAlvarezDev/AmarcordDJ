@@ -9,20 +9,30 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/v/release/JoseAlvarezDev/AmarcordDJ?display_name=tag&style=for-the-badge&label=Latest%20Release&color=0b0b10" alt="Latest Release" />
+</p>
+
+<p align="center">
   <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases/download/v0.1.0/AmarcordDJ_0.1.0_aarch64.dmg.zip">
-    <img src="https://img.shields.io/badge/Download-macOS-0b0b10?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS" />
+    <img src="https://img.shields.io/badge/macOS%20(Apple%20Silicon)-DMG%20Download-0b0b10?style=for-the-badge&logo=apple&logoColor=white" alt="Download macOS DMG" />
+  </a>
+  <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases/download/v0.1.0/AmarcordDJ_0.1.0_aarch64.app.zip">
+    <img src="https://img.shields.io/badge/macOS%20App%20Bundle-.app%20Download-1f2937?style=for-the-badge&logo=apple&logoColor=white" alt="Download macOS App Bundle" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases">
+    <img src="https://img.shields.io/badge/Windows-Coming%20Soon-0b0b10?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Coming Soon" />
   </a>
   <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases">
-    <img src="https://img.shields.io/badge/Download-Windows-0b0b10?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" />
-  </a>
-  <a href="https://github.com/JoseAlvarezDev/AmarcordDJ/releases">
-    <img src="https://img.shields.io/badge/Download-Linux-0b0b10?style=for-the-badge&logo=linux&logoColor=white" alt="Download for Linux" />
+    <img src="https://img.shields.io/badge/Linux-Coming%20Soon-0b0b10?style=for-the-badge&logo=linux&logoColor=white" alt="Linux Coming Soon" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://ko-fi.com/josealvarezdev">
-    <img src="https://img.shields.io/badge/Support-Ko--fi-16a34a?style=for-the-badge&logo=kofi&logoColor=white" alt="Support on Ko-fi" />
+    <img src="https://img.shields.io/badge/Support%20this%20project-Ko--fi-16a34a?style=for-the-badge&logo=kofi&logoColor=white" alt="Support on Ko-fi" />
   </a>
 </p>
 
